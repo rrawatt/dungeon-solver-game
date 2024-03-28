@@ -1,0 +1,13 @@
+MAZE GENERATION:
+mazetree() board=[(0,0,x), (0,1,x), (0,2,x)....(49,47,x), (49,48,x), (49,49,x)] 2500 elements
+x:0 or 1. 0 not travellable, 1 travellable.
+once a block is set to 1, it cannot be changed back during generation.
+each block now 1 will choose one of its verticle or horizontal neighbours and not diagonal neighbours.
+two diagonal blocks cannot be 1.
+start to end is first generation.
+once the start to end is set, it will go back randomly to state 1 block and start one a new bad path.
+the end of a path will never connect to a already state 1 block.
+choice of movement: u:y-=1, d:y+=1, r:x+=1, l:x-=1
+
+
+
